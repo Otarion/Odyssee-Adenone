@@ -1,0 +1,102 @@
+/*************************
+****PAGE DE DEPART****
+**************************/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#win0{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 40%;
+}
+
+#btnStart{
+    width: 6rem;
+    cursor: pointer;
+}
+
+/*************************
+*********PEUPLE*********
+**************************/
+
+#win1{
+    width: 50%;
+    display: flex;
+}
+
+#textPeuple{
+    display: flex;
+    flex-direction: column;
+}
+#btnP{
+    display: flex;
+}
+
+#introPeuple{
+    width: 40%;
+}
+
+.btnPeuple{
+    width: 5rem;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0.25rem;
+}
+
+#validPeuple{
+    margin: 1rem;
+    width: 3.5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btnssHumain{
+    background-color: lightblue;
+}
+
+.btnssElfe{
+    background-color: lightgreen;
+}
+
+.btnssNain{
+    background-color: lightsalmon;
+}
+
+.btnssDaemon{
+    background-color: rgb(215, 166, 215);
+}
+
+.btnssBete{
+    background-color: lightgoldenrodyellow;
+}
+
+.btnssHy{
+    background-color: lightpink;
+}
+
+.btnssPeuple{
+    cursor: pointer;
+}
+
+#expP{
+    border: 3px ridge red;
+    width: 35rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+#blocValid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

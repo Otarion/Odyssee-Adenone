@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="characterbuilder.css">
+    <title>CHARACTER BUILDER - Peuple</title>
+</head>
+<body>
+<!----------------------------------->
+<!-------------PEUPLE-------------->
+<!----------------------------------->
+
+<div id="win1" class="cadre peuple">
+    <div id="textPeuple" class="peuple">
+        <div id="introPeuple" class="desc peuple">
+            <p class="txt peuple" style="color:red; font-size: x-large;"><b>PEUPLE</b></p>
+            <p class="txt peuple">Choississez votre peuple:</p>
+        </div>
+
+    <!--BOUTONS DES PEUPLES-->
+    <div id="btnP">
+        <button id="btnH" class="btnPeuple peuple humain" style="background-color: lightblue;">Humain·e</button>
+        <button id="btnE" class="btnPeuple peuple elfe" style="background-color: lightgreen;">Elfe</button>
+        <button id="btnN" class="btnPeuple peuple nain" style="background-color: lightsalmon;">Nain·e</button>
+        <button id="btnD" class="btnPeuple peuple deamon" style="background-color: rgb(215, 166, 215);">Dæmon·e</button>
+        <button id="btnB" class="btnPeuple peuple bete" style="background-color: lightgoldenrodyellow ;">Bête</button>
+        <button id="btnHy" class="btnPeuple peuple hybride" style="background-color: lightpink;">Hybride</button>
+    </div>
+
+        <!--SELECTION-->
+        <div id="blocssPeuple">
+            <p id="textssPeuple" style="display: none;">Choisississez votre sous-catégorie:</p>
+            <!--HUMAINS-->
+            <div id="btnssH" class="btnssPeuple humain" style="display: none;">
+                <button id="btnCit" class="btnssPeuple btnssHumain humain">Citadin·e</button>
+                <button id="btnGosse" class="btnssPeuple btnssHumain humain">Gosse des rues</button>
+                <button id="btnNob" class="btnssPeuple btnssHumain humain">Noble</button>
+                <button id="btnNom" class="btnssPeuple btnssHumain humain">Nomade</button>
+                <button id="btnRur" class="btnssPeuple btnssHumain humain">Rural·e</button>
+                <button id="btnTri" class="btnssPeuple btnssHumain humain">Tribuan·e</button>
+            </div>
+            <!--ELFE-->
+            <div id="btnssE" class="btnssPeuple elfe" style="display: none;">
+                <button id="btnSol" class="btnssPeuple btnssElfe elfe">Solaire</button>
+                <button id="btnLun" class="btnssPeuple btnssElfe elfe">Lunaire</button>
+                <button id="btnAby" class="btnssPeuple btnssElfe elfe">Abyssal</button>
+            </div>
+            <!--NAIN-->
+            <div id="btnssN" class="btnssPeuple nain" style="display: none;">
+                <button id="btnMont" class="btnssPeuple btnssNain nain">Monts</button>
+                <button id="btnPlaine" class="btnssPeuple btnssNain nain">Plaines</button>
+            </div>
+            <!--DAEMON-->
+            <div id="btnssD" class="btnssPeuple Daemon" style="display: none;">
+                <button id="btnLet" class="btnssPeuple btnssDaemon daemon">Lettré·e</button>
+                <button id="btnCourt" class="btnssPeuple btnssDaemon daemon">Courtisan·e</button>
+                <button id="btnCombt" class="btnssPeuple btnssDaemon daemon">Combattant·e</button>
+                <button id="btnArt" class="btnssPeuple btnssDaemon daemon">Artisan·e</button>
+                <button id="btnOuv" class="btnssPeuple btnssDaemon daemon">Ouvrier·ère</button>
+                <button id="btnReb" class="btnssPeuple btnssDaemon daemon">Rebel·le</button>
+            </div>
+            <!--BETE-->
+            <div id="btnssB" class="btnssPeuple bete" style="display: none;">
+                <button id="btnGr" class="btnssPeuple btnssBete bete">Griffes</button>
+                <button id="btnCr" class="btnssPeuple btnssBete bete">Crocs</button>
+                <button id="btnEca" class="btnssPeuple btnssBete bete">Ecailles</button>
+                <button id="btnPlu" class="btnssPeuple btnssBete bete">Plumes</button>
+                <button id="btnEau" class="btnssPeuple btnssBete bete">Eaux</button>
+                <button id="btnMas" class="btnssPeuple btnssBete bete">Massifs</button>
+                <button id="btnRon" class="btnssPeuple btnssBete bete">Rongeurs</button>
+                <button id="btnSab" class="btnssPeuple btnssBete bete">Sabots</button>
+            </div>
+            <!--HYBRIDE-->
+            <div id="btnssHy" class="btnssPeuple hybride" style="display: none;">
+                <button id="btnDemi" class="btnssPeuple btnssHy hybride">Demi·e elfe</button>
+                <button id="btnGrand" class="btnssPeuple btnssHy hybride">Grand·e nain·e</button>
+                <button id="btnGarou" class="btnssPeuple btnssHy hybride">Garou</button>
+                <button id="btnDia" class="btnssPeuple btnssHy hybride">Diable·sse</button>
+                <button id="btnAberr" class="btnssPeuple btnssHy hybride">Aberration</button>
+                <button id="btnAni" class="btnssPeuple btnssHy hybride">Anima</button>
+                <button id="btnFie" class="btnssPeuple btnssHy hybride">Fiélon·ne</button>
+                <button id="btnNChao" class="btnssPeuple btnssHy hybride">Nain·e du Chaos</button>
+                <button id="btnNSauv" class="btnssPeuple btnssHy hybride">Nain·e sauvage</button>
+                <button id="btnBDemo" class="btnssPeuple btnssHy hybride">Bête démoniaque</button>
+            </div>
+        </div>
+
+        <div id="blocValid">
+            <div id="expP" style="display: none;"></div>
+            <button id="validPeuple" class="btn valid"  style="display: none;" data-page="win2.html">Valider</button>
+        </div>
+</div>
+<script type="module" src="characterbuilder.js" defer></script>
+</body>
+</html>
